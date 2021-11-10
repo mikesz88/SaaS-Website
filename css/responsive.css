@@ -1,0 +1,181 @@
+@media screen and (max-width: 768px) {
+    .gradient {
+        right: 0;
+    }
+
+    .container {
+        margin-left: auto;
+    }
+
+    [aria-controls="navbarDropdown"] {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: flex;
+        position: absolute;
+        top: 45px;
+        background-color: rgb(255,255,255);
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(52 49 75 / 10%);
+        z-index: 500;
+    }
+
+    [aria-expanded="true"] ~ ul li {
+        margin: 20px var(--size-10);
+        color: var(--font-color-dark);
+    }
+
+    .google {
+        top: 20px;
+        left: 0px;
+    }
+
+    .paypal {
+        top: 150px;
+        left: 0px;
+    }
+
+    .google-ads {
+        bottom: 100px;
+        left: 85px;
+    }
+
+    .empower-logo {
+        margin-bottom: 0;
+    }
+
+    .photo-container .girl {
+        top: 100px;
+        z-index: 10;
+    }
+    
+    .photo-container .dots {
+        top: 225px;
+        left: 25px;
+        width: 50%;
+    }
+
+    .pricing-container .info-container {
+        text-align: center;
+    }
+
+    .hubspot-photo-container {
+        margin-bottom: -50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gradient {
+        right: 25px;
+    }
+    
+    [aria-expanded="true"] ~ ul li {
+        margin: 20px var(--size-7);
+    }
+
+    .learn-grid {
+        padding-top: 0;
+    }
+
+    .learn-grid .learn-text-container {
+        padding-bottom: 50px;
+    }
+    
+    .why-front {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "why-front-text-container why-front-text-container"
+        "graphic-container line-text-container"
+        "video-container video-container";
+        margin-top: 0;
+    }
+
+    .why-front-text-container {
+        margin-bottom: 0;
+    }
+
+    .why-front-text-container {
+        grid-area: why-front-text-container;
+    }
+
+    .graphic-container {
+        grid-area: graphic-container;
+    }
+
+    .line-text-container {
+        grid-area: line-text-container;
+    }
+
+    .why-front .video-container {
+        margin: 50px 0;
+        grid-area: video-container;
+    }
+
+    .graphic-container, .line-text-container {
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .graphic-container hr {
+        display: none;
+    }
+
+    .info-container {
+        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-items: center;    
+    }
+
+    .hire-form-bg {
+        padding: 30px;
+    }
+
+    .footer-container {
+        display: initial;
+    }
+
+    .logo-address {
+        align-items: center;
+    }
+
+    .hubspot-photo-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "hubspot-container"
+        "photo-container";
+        margin-top: 0;
+    }
+
+    .hubspot-container {
+        grid-area: hubspot-container;
+        padding-bottom: 0px;
+    }
+
+    .photo-container {
+        grid-area: photo-container;
+    }
+
+    .photo-container .girl {
+        left: 80px;
+        top: 0;
+    }
+
+    .photo-container .dots {
+        top: 115px;
+        left: 0;
+    }
+
+    .trusted-companies {
+        margin: 100px auto;
+    }
+}
