@@ -531,7 +531,7 @@ nav {
 /* hire and contact form */
 .hire-form-bg {
     /* Background pattern from Toptal Subtle Patterns */
-    background-image: url("/fakeLogos/dark-paths.png");
+    background-image: url("../fakeLogos/dark-paths.png");
     padding: 50px 125px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
